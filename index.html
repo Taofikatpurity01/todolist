@@ -1,1 +1,75 @@
-My ToDo
+<!DOCTYPE html
+<html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+this is my todo list
+<h1>Todos</h1>
+</head>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing :border box
+}
+body{
+width:50%;
+margin:4rem auto;
+}
+input{
+width:300px;
+height:45px
+padding:0 1rem;
+button{
+height: 45px;
+padding:0 1rem;
+ul{
+list - style :none;
+margin:1rem 0;
+li{
+margin:1rem 0;font size :30px;
+font size:30px;
+background:#eaeaea
+padding:5rem 1rem;
+position:relative;
+linethrough: :after
+{position:absolute;
+left:0;
+top:50px;
+height:2px;
+background:#ff0000;
+content:" " ;
+width:100%;
+display:black;
+</style>
+<body>
+<form>
+<form class ="form " >
+<input type="test" class="input" id ="input" placeholder="enter your todos"autocomplete>
+<button class = "btn " type="add new " >add new</button>
+<ul>
+<ul class="ul">
+</form>
+</ul>
+<script>
+const input El=document.querySelector(."input " )
+const form=document.querySelector(." form" )
+const btn=document.querySelector(." btn" )
+const ul=document.querySelector(." ul " )
+
+
+
+form.add eventListener" add new", ()=>{event.preventDefault();
+event.preventDefault();
+let li=document.createElement(" li" )
+let inputVal=inputEl.value;
+li.appendChild(document.createTextNode(inputVal)
+ul.appendChild(li);
+li.add EventListener("click ",()=>{//li.style.textDecoration="line-through"
+li.classList.add("linethrough")})
+
+form.reset();
+})
+</script>
+</body>
+</html>
