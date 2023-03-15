@@ -71,6 +71,9 @@ li.classList.add("linethrough")})
 form.reset();
 })
 local storage.x=10;
+window.onstorage = function(e) {
+    console.log(e);
+}
 </script>
 </body>
 </html>
