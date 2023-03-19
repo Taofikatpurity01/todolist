@@ -1,79 +1,35 @@
-<!DOCTYPE html
-<html>
+<!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-this is my todo list
-<h1>Todos</h1>
-</head>
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing :border box
-}
-body{
-width:50%;
-margin:4rem auto;
-}
-input{
-width:300px;
-height:45px
-padding:0 1rem;
-button{
-height: 45px;
-padding:0 1rem;
-ul{
-list - style :none;
-margin:1rem 0;
-li{
-margin:1rem 0;font size :30px;
-font size:30px;
-background:#eaeaea
-padding:5rem 1rem;
-position:relative;
-linethrough: :after
-{position:absolute;
-left:0;
-top:50px;
-height:2px;
-background:#ff0000;
-content:" " ;
-width:100%;
-display:black;
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>my todos</title>
+</head'>
 <body>
-<form>
-<form class ="form " >
-<input type="test" class="input" id ="input" placeholder="enter your todos"autocomplete>
-<button class = "btn " type="add new " >add new</button>
-<ul>
-<ul class="ul">
-</form>
-</ul>
-<script>
-const inputEl=document.querySelector(."input " )
-const form=document.querySelector(." form" )
-const btn=document.querySelector(." btn" )
-const ul=document.querySelector(." ul " )
+    <div class="container">
+        <div class="head">
+            <h1>Todos</h1>
+            <p>create your todo</p>
 
+        </div>
+        
+        <form class="form" id="form">
+            <div class="fom">
 
-
-form.add eventListener" add new", ()=>{event.preventDefault();
-event.preventDefault();
-let li=document.createElement(" li" )
-let inputVal=inputEl.value;
-li.appendChild(document.createTextNode(inputVal)
-ul.appendChild(li);
-li.add EventListener("click ",()=>{//li.style.textDecoration="line-through"
-li.classList.add("linethrough")})
-
-form.reset();
-})
-local storage.x=10;
-window.onstorage = function(e) {
-    console.log(e);
-}
-</script>
+                <input type="text" class="input" placeholder="enter your todo" id="txt" >
+                <button type="button"  class="btn" onclick="clearinput()" id="btn" > Add new</button>
+                <ol class="ol" id="ol">
+                   
+            </div>
+        </form>
+    </div>
+    <p class="create"> note you can delete a todo by clicking on it</p>
+   <script src="index.js">
+    
+   </script>
 </body>
 </html>
+<!-- onclick="reset()" -->
+<!-- onblur="getVal()" -->
